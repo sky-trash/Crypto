@@ -1,0 +1,4 @@
+# create migration
+
+docker-compose exec backend alembic revision --autogenerate -m "description"
+docker-compose exec backend alembic upgrade head
