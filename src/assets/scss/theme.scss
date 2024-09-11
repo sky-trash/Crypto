@@ -1,0 +1,12 @@
+@import '@/assets/scss/variables';
+.light{
+  .bg-item{
+    background-color: $white;
+  }
+}
+
+.dark{
+  .bg-item{
+    background-color: $bg-dark;
+  }
+}

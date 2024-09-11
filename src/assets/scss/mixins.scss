@@ -1,0 +1,55 @@
+@import 'variables';
+
+@mixin ibg {
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@mixin img {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@mixin border($color: $gray, $lc: false, $outlined: false) {
+  border-bottom: 1px solid $color;
+  @if $lc == true {
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  @if $outlined == true {
+    border: 1px solid $color;
+  }
+}
+
+@mixin scrollbar() {
+  &::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+    border: 0;
+    border-radius: 20px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $gray-400;
+  }
+}
+
+@mixin no-scroll() {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+@import 'variables';
+
+.container {
+  max-width: 1740px;
+  margin: 0 auto;
+  width: 100%;
+  @media (max-width: $md1 + px) {
+    max-width: 1200px;
+  }
+  @media (max-width: $md2 + px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3 + px) {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  @media (max-width: $md4 + px) {
+  }
+}
